@@ -1,0 +1,23 @@
+{
+    "name": "Innings Watch",
+    "version": "1.0.0",
+    "description": "The Cricket Extension: Stay on top of the cricket action with real-time scores, match alerts, and the latest news—all in your browser. Get instant updates, watch highlights, and follow your favorite teams effortlessly. Download now to keep the cricket excitement alive, wherever you are! ",
+    "manifest_version": 3,
+    "author": "Abhinav Chaudhary",
+    "action": {
+        "default_icon": {
+            "16": "assets/icon16.png",
+            "48": "assets/icon48.png",
+            "128": "assets/icon128.png"
+        },
+        "default_popup": "index.html",
+        "default_title": "Innings Watch" 
+    },
+
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "storage", "activeTab", "scripting"
+    ]
+}
